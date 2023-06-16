@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\ParesController;
+use App\Http\Controllers\PrimosController;
 use App\Http\Controllers\CursoControler;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +20,8 @@ Route::get('/', function () {
 });
 
 Route::get('sumanormal', [Cursocontroler ::class,'numerosAmigos']);
+
+Route::get('pares/{numero1}/{numero2}', [ParesController ::class,'ParImpar']);
+
+Route::get('primos/{numero1}', [PrimosController ::class,'Primos']);
 

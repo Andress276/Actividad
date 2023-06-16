@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Cursocontroler extends Controller
-{
+class Cursocontroler extends Controller{
+
 
     public function numerosAmigos()
     {
@@ -13,9 +13,9 @@ class Cursocontroler extends Controller
         $numero2 = 284;
 
         if ($this->sonAmigos($numero1, $numero2)) {
-            $mensaje = "$numero1 y $numero2 son números amigos.";
+            $mensaje = "$numero1 y $numero2 Son numeros amigos.";
         } else {
-            $mensaje = "$numero1 y $numero2 no son números amigos.";
+            $mensaje = "$numero1 y $numero2 No son numeros amigos.";
         }
 
         return $mensaje;
